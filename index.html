@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sorting Table tutorial</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+  <h1>To sort alphabetically and numerically, press on the table heads.</h1> <br>
+
+  <table id="myTable">
+    <tr id="thead">
+      <th class="teamName" >Team Name</th>
+      <th class="wins" >Wins</th>
+      <th class="draws" >Draws</th>
+      <th class="losses" >Losses</th>
+      <th class="points" >Points</th>
+    </tr>
+    
+      <tr>
+      <td class="teamName">Sonderjyske</td>
+      <td class="wins" >5</td>
+      <td class="draws">2</td>
+      <td class="losses">1</td>
+      <td class="points">17</td>
+    </tr>
+    <tr>
+      <td class="teamName">Midtjylland</td>
+      <td class="wins" >5</td>
+      <td class="draws">1</td>
+      <td class="losses">2</td>
+      <td class="points">16</td>
+    </tr>
+    <tr>
+      <td class="teamName">Aarhus</td>
+      <td class="wins" >4</td>
+      <td class="draws">3</td>
+      <td class="losses">1</td>
+      <td class="points">15</td>
+    </tr>
+    <tr>
+      <td class="teamName">Brondby</td>
+      <td class="wins" >5</td>
+      <td class="draws">0</td>
+      <td class="losses">3</td>
+      <td class="points">15</td>
+    </tr>
+    <tr>
+      <td class="teamName">Vejle</td>
+      <td class="wins" >4</td>
+      <td class="draws">2</td>
+      <td class="losses">2</td>
+      <td class="points">14</td>
+    </tr>
+      
+  </table>
+  <div id="buttoncontainer">
+
+    <div>
+      <button id="sort_team_asc" onclick="ChangingTableValues(ttable.sort(compareValues('name', 'asc')))">Sort by Team name (asc)</button>
+      <button id="sort_team_des" onclick="ChangingTableValues(ttable.sort(compareValues('name', 'desc')))">Sort by Team name (des)</button>  
+    </div>    
+    <div>
+      <button id="sort_wins_asc" onclick=" ChangingTableValues(ttable.sort(compareValues('win', 'asc')))">Sort by Wins (asc)</button>
+      <button id="sort_wins_des" onclick="ChangingTableValues(ttable.sort(compareValues('win', 'desc')))">Sort by Wins (des)</button>
+    </div>
+    <div>
+      <button id="sort_draws asc" onclick="ChangingTableValues(ttable.sort(compareValues('draw', 'asc')))">Sort by Draws (asc)</button>
+      <button id="sort_draws_des" onclick="ChangingTableValues(ttable.sort(compareValues('draw', 'desc')))">Sort by Draws (des)</button>
+    </div>
+    <div>
+      <button id="sort_losses_asc" onclick="ChangingTableValues(ttable.sort(compareValues('losse', 'asc')))">Sort by Losses (asc)</button>
+      <button id="sort_losses_des" onclick="ChangingTableValues(ttable.sort(compareValues('losse', 'desc')))">Sort by Losses (des)</button>
+    </div>
+    <div>
+      <button id="sort_points_asc" onclick="ChangingTableValues(ttable.sort(compareValues('point', 'asc')))">Sort by Points (asc)</button>
+      <button id="sort_points_des" onclick="ChangingTableValues(ttable.sort(compareValues('point', 'desc')))">Sort by Points (des)</button>
+    </div>
+    
+  </div>
+  
+
+
+  <script src="./js/sorting.js"></script>
+
+</html>
